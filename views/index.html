@@ -1,10 +1,12 @@
 <%- include('partials/header.ejs')%>
 
         <img src = "/img/solar_system.jpg" alt = "The Solar System" />
-        <h1>Welcome to the Solar System Site!</h1>
+        <h1 class="display-3">Welcome to the Solar System Site!</h1>
+        <hr>
         <p>Click on a planet to know more about it:</p>
-        
-            <a href="/mercury">Mercury</a><br>
-            <a href="/venus">Venus</a><br>
-            Earth<br>
+        <div class="d-flex flex-column">
+            <div class="p-2"><a href="/mercury" class="btn btn-success">Mercury</a></div>
+            <div class="p-2"><a href="/venus" class="btn btn-warning">Venus</a></div>
+            <div class="p-2"><a href="/earth" class="btn btn-primary">Earth</a></div>
+        </div>
 <%- include('partials/footer.ejs')%>
